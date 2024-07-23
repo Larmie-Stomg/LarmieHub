@@ -1,0 +1,449 @@
+/* Style global pour le corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style pour l'en-tête */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour le logo */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e50914;
+}
+
+/* Style pour la section principale */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour la section du titre */
+.title-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style pour le titre principal */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #e50914;
+}
+
+/* Style pour la section des épisodes */
+.episode-section {
+    width: 100%;
+}
+
+/* Style pour la liste des épisodes */
+.episode-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style pour chaque élément d'épisode */
+.episode-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 150px;
+    text-align: center;
+}
+
+/* Style pour le lien dans chaque élément d'épisode */
+.episode-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+}
+
+/* Effet de survol pour chaque élément d'épisode */
+.episode-item:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+/* Style pour le numéro de l'épisode */
+.episode-number {
+    font-size: 1.2em;
+}
+
+/* Style pour la section des boutons de saison */
+.season-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les boutons de saison horizontalement */
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 20px;
+}
+
+/* Style pour chaque bouton de saison */
+.season-button {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Effet de survol pour chaque bouton de saison */
+.season-button:hover {
+    background-color: #f6121d;
+}
+
+/* Style pour les boutons de film et série */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Centre les boutons horizontalement */
+}
+
+/* Style pour chaque bouton */
+.button {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Effet de survol pour chaque bouton */
+.button:hover {
+    background-color: #f6121d;
+}
+
+/* Style spécifique pour le bouton Films */
+.button-film {
+    background-color: #e50914;
+}
+
+/* Effet de survol pour le bouton Films */
+.button-film:hover {
+    background-color: #f6121d;
+}
+
+/* Style spécifique pour le bouton Séries */
+.button-series {
+    background-color: #e50914;
+}
+
+/* Effet de survol pour le bouton Séries */
+.button-series:hover {
+    background-color: #f6121d;
+}
+/* Style spécifique pour le bouton Young */
+.button-young {
+    background-color: #e50914;
+}
+
+/* Effet de survol pour le bouton Young */
+.button-young:hover {
+    background-color: #f6121d;
+}
+/* Style pour le bouton Retour */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Effet de survol pour le bouton Retour */
+.back-button:hover {
+    background-color: #f6121d;
+}
+.youtube-button {
+    border: none; /* Enlève la bordure du bouton */
+    padding: 0; /* Enlève le padding par défaut du bouton */
+    background: none; /* Pas de fond pour le bouton */
+    cursor: pointer; /* Curseur pointer sur hover */
+}
+
+.youtube-link {
+    display: flex; /* Affiche le contenu du lien en flexbox */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    background-color: #ff0000; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+.youtube-icon {
+    width: 20px; /* Largeur de l'icône */
+    height: auto; /* Hauteur automatique */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.youtube-link:hover {
+    background-color: #cc0000; /* Couleur de fond plus foncée sur hover */
+}
+
+.streamplus-button {
+    border: none; /* Enlève la bordure du bouton */
+    padding: 0; /* Enlève le padding par défaut du bouton */
+    background: none; /* Pas de fond pour le bouton */
+    cursor: pointer; /* Curseur pointer sur hover */
+}
+
+.streamplus-link {
+    display: flex; /* Affiche le contenu du lien en flexbox */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    background-color: #28a745; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+.streamplus-icon {
+    width: 20px; /* Largeur de l'icône */
+    height: auto; /* Hauteur automatique */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.streamplus-link:hover {
+    background-color: #218838; /* Couleur de fond plus foncée sur hover */
+}
+
+
+.hotstream-button {
+    border: none; /* Enlève la bordure du bouton */
+    padding: 0; /* Enlève le padding par défaut du bouton */
+    background: none; /* Pas de fond pour le bouton */
+    cursor: pointer; /* Curseur pointer sur hover */
+}
+
+.hotstream-link {
+    display: flex; /* Affiche le contenu du lien en flexbox */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    background-color: #37008a; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+.hotstream-icon {
+    width: 20px; /* Largeur de l'icône */
+    height: auto; /* Hauteur automatique */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.hotstream-link:hover {
+    background-color: #37008a; /* Couleur de fond plus foncée sur hover */
+}
+
+
+.twitch-button {
+    border: none; /* Enlève la bordure du bouton */
+    padding: 0; /* Enlève le padding par défaut du bouton */
+    background: none; /* Pas de fond pour le bouton */
+    cursor: pointer; /* Curseur pointer sur hover */
+}
+
+.twitch-link {
+    display: flex; /* Affiche le contenu du lien en flexbox */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    background-color: #5c00e6; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+.twitch-icon {
+    width: 20px; /* Largeur de l'icône */
+    height: auto; /* Hauteur automatique */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.twitch-link:hover {
+    background-color: #5c00e6; /* Couleur de fond plus foncée sur hover */
+}
+
+
+.netflix-button {
+    border: none; /* Enlève la bordure du bouton */
+    padding: 0; /* Enlève le padding par défaut du bouton */
+    background: none; /* Pas de fond pour le bouton */
+    cursor: pointer; /* Curseur pointer sur hover */
+}
+
+.netflix-link {
+    display: flex; /* Affiche le contenu du lien en flexbox */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    background-color: #ff0000; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+.netflix-icon {
+    width: 20px; /* Largeur de l'icône */
+    height: auto; /* Hauteur automatique */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.netflix-link:hover {
+    background-color: #cc0000; /* Couleur de fond plus foncée sur hover */
+}
+
+
+/* Style global pour le corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style pour l'en-tête */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour le logo */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e50914;
+}
+
+/* Style pour la section principale */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour la section du titre */
+.title-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style pour le titre principal */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #e50914;
+}
+
+/* Style pour la section des films */
+.film-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style pour chaque élément de film */
+.film-item {
+    background-color: #e50914;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 150px;
+    text-align: center;
+}
+
+/* Style pour le lien dans chaque élément de film */
+.film-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+}
+
+/* Effet de survol pour chaque élément de film */
+.film-item:hover {
+    transform: scale(1.05);
+    background-color: #e50914;
+}
+
+/* Style pour le nom du film */
+.film-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Style pour l'image de l'affiche du film */
+.film-poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Style pour le bouton Retour */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Effet de survol pour le bouton Retour */
+.back-button:hover {
+    background-color: #f6121d;
+}
