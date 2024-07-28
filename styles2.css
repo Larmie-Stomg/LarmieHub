@@ -195,10 +195,10 @@ img.youtube-icon, img.streamplus-icon, img.hotstream-icon, img.twitch-icon {
     align-items: center;
     padding: 10px;
     border-radius: 5px;
-    background-color: #9146FF;
+    background-color: #ff0000;
     transition: background-color 0.3s;
 }
 
 .netflix-button .netflix-link:hover {
-    background-color: #7233CC;
+    background-color: #ff0000;
 }
