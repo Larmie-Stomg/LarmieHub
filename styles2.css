@@ -16,7 +16,7 @@ header {
     padding: 20px;
     background-color: #000000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -25,6 +25,20 @@ header {
     font-size: 24px;
     font-weight: 700;
     color: #e50914;
+}
+
+.back-button {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.back-button:hover {
+    background-color: #f6121d;
 }
 
 /* Style pour la section principale */
@@ -51,108 +65,140 @@ h1 {
     color: #e50914;
 }
 
-/* Style pour la section des épisodes */
-.episode-section {
-    width: 100%;
-}
-
-/* Style pour la liste des épisodes */
-.episode-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Style pour chaque élément d'épisode */
-.episode-item {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s, background-color 0.3s;
-    width: 150px;
-    text-align: center;
-}
-
-/* Style pour le lien dans chaque élément d'épisode */
-.episode-item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    display: block;
-}
-
-/* Effet de survol pour chaque élément d'épisode */
-.episode-item:hover {
-    transform: scale(1.05);
-    background-color: #444;
-}
-
-/* Style pour le numéro de l'épisode */
-.episode-number {
-    font-size: 1.2em;
-}
-
-/* Style pour la section des boutons de saison */
-.season-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centre les boutons de saison horizontalement */
-    gap: 10px; /* Espacement entre les boutons */
-    margin-top: 20px;
-}
-
-/* Style pour chaque bouton de saison */
-.season-button {
-    background-color: #e50914;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-weight: 500;
-}
-
-/* Effet de survol pour chaque bouton de saison */
-.season-button:hover {
-    background-color: #f6121d;
-}
-
-/* Style pour les boutons de film et série */
+/* Style pour la section des boutons */
 .button-container {
     display: flex;
-    flex-direction: column; /* Change l'alignement des boutons en colonne */
-    gap: 10px;
-    align-items: center; /* Centre les boutons horizontalement */
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 10px; /* Espacement entre les boutons */
 }
 
-/* Style pour chaque bouton de film et série */
-.youtube-button, .streamplus-button, .hotstream-button, .twitch-button, .netflix-button {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
+/* Style pour chaque bouton */
+button {
+    background-color: transparent;
     border: none;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s;
-    text-decoration: none;
+    cursor: pointer;
 }
 
-.youtube-button a, .streamplus-button a, .hotstream-button a, .twitch-button a, .netflix-button a {
+a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.youtube-button .youtube-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF0000;
+    transition: background-color 0.3s;
 }
 
-.youtube-button img, .streamplus-button img, .hotstream-button img, .twitch-button img, .netflix-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+.youtube-button .youtube-link:hover {
+    background-color: #CC0000;
 }
 
-/* Effet de survol pour chaque bouton de film et série */
-.youtube-button:hover, .streamplus-button:hover, .hotstream-button:hover, .twitch-button:hover, .netflix-button:hover {
-    background-color: #444;
+.streamplus-button .streamplus-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1DB954;
+    transition: background-color 0.3s;
+}
+
+.streamplus-button .streamplus-link:hover {
+    background-color: #14843A;
+}
+
+.hotstream-button .hotstream-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF4500;
+    transition: background-color 0.3s;
+}
+
+.hotstream-button .hotstream-link:hover {
+    background-color: #CC3700;
+}
+
+.twitch-button .twitch-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9146FF;
+    transition: background-color 0.3s;
+}
+
+.twitch-button .twitch-link:hover {
+    background-color: #7233CC;
+}
+
+/* Style pour les icônes */
+img.youtube-icon, img.streamplus-icon, img.hotstream-icon, img.twitch-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .back-button {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.netflix-button .netflix-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9146FF;
+    transition: background-color 0.3s;
+}
+
+.netflix-button .netflix-link:hover {
+    background-color: #7233CC;
 }
