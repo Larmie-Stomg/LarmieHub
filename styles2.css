@@ -140,9 +140,22 @@ a {
 .twitch-button .twitch-link:hover {
     background-color: #7233CC;
 }
+.netflix-button .netflix-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    transition: background-color 0.3s;
+}
+
+.netflix-button .netflix-link:hover {
+    background-color: #ff0000;
+}
 
 /* Style pour les icônes */
-img.youtube-icon, img.streamplus-icon, img.hotstream-icon, img.twitch-icon {
+img.youtube-icon, img.streamplus-icon, img.hotstream-icon, img.twitch-icon, img.netflix-icon {
     width: 50px;
     height: 50px;
 }
@@ -189,16 +202,3 @@ img.youtube-icon, img.streamplus-icon, img.hotstream-icon, img.twitch-icon {
 }
 
 
-.netflix-button .netflix-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ff0000;
-    transition: background-color 0.3s;
-}
-
-.netflix-button .netflix-link:hover {
-    background-color: #ff0000;
-}
