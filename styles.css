@@ -447,3 +447,12 @@ h1 {
 .back-button:hover {
     background-color: #f6121d;
 }
+
+body {
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover; /* Pour ajuster l'image de manière à ce qu'elle couvre tout l'écran */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    background-position: center center; /* Pour centrer l'image */
+    height: 100vh; /* Pour que le fond couvre toute la hauteur de l'écran */
+    margin: 0; /* Pour éviter les marges par défaut du body */
+}
